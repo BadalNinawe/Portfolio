@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span class="logo">B</span>adal.</h1>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="cross fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="cross fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="both-content">
+        <div class="header-text">
+          <p>MERN Developer</p>
+          <h2>
+            Hi, I'm <span class="name">Badal</span> <br />
+            Ninawe from Bhiwapur
+          </h2>
+        </div>
+        <div>
+          <img
+            class="image"
+            src="image/about.png"
+            width="400px"
+            height="450px"
+            alt="hellow"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- -----about------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <p class="content">
+              <img
+                class="photo"
+                src="image/about.png"
+                width="300px"
+                height="340px"
+                alt=""
+              />
+            </p>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me!!!</h1>
+            <p>
+              I am a passionate MERN Stack Developer with expertise in building
+              dynamic and scalable web applications. I specialize in MongoDB,
+              Express.js, React, and Node.js, crafting seamless user experiences
+              and robust backend solutions. Constantly learning and innovating,
+              I thrive on solving complex problems with clean and efficient code
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experiance')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>2025</span><br />
+                  FRONTEND Developer
+                </li>
+                <li><span>2026</span><br />BACKEND Developer</li>
+                <li>
+                  <span>2027</span><br />
+                  JAVA With Dsa
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiance">
+              <ul>
+                <li><span>FRESHER</span><br />No experiance</li>
+                <li><span>15Days</span><br />ADINFOCOM.tech</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>12th-2022</span><br />Rashtriya vidyalaya Bhiwapur
+                </li>
+                <li>
+                  <span>3rd year-Current</span><br />Tulsiramji Gaikwad
+                  patil-college Of Engineering
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <!-- --serveces=---===---- -->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>
+                Developing e-commerce solutions with features like shopping
+                carts, payment gateways, and admin panels.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-globe"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Providing expert guidance and best practices for architecting
+                and scaling MERN-based solutions.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-java"></i>
+              <h2>Java With DSA</h2>
+              <p>
+                Implementing linked lists, trees, graphs, heaps, and hashmaps
+                for specific use cases.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- -----portfolio------ -->
+    </div>
+    <div id="portfolio">
+      <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+          <div class="work">
+            <img src="https://wallpaperaccess.com/full/8901669.jpg" alt="" />
+            <div class="layer">
+              <h2>Mern ChatBot Application</h2>
+              <p>
+                My Chatbots encourage users by offering daily affirmations and
+                positive messages.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6c4cc1104599627.633512684957b.png"
+              alt=""
+            />
+            <div class="layer">
+              <h2>UI Food-Serve Application</h2>
+              <p>
+                My Application serve an emotional connection by fulfilling
+                cravings, providing comfort, and enhancing experiences.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://repository-images.githubusercontent.com/617530805/008d77dd-1d03-4f3a-b828-54832c72bc08"
+              alt=""
+            />
+            <div class="layer">
+              <h2>Smart Traffic Management System</h2>
+              <p>
+                A Smart Traffic Management System helps improve traffic flow,
+                reduce congestion, and enhance road safety using Java and DSA.
+              </p>
+              <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> badalninawe@mail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 8767076861</p>
+            <div class="social-icons">
+              <a href="https://linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <a href=""><i class="fa-brands fa-hackerrank"></i></a>
+              <a href=""><i class="fa-brands fa-threads"></i></a>
+            </div>
+            <a href="image/CertificateOfPython.pdf" download class="btn btn2"
+              >DownLoad CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Badal Made With <i class="fa-solid fa-heart"></i> By
+          MySkills Tutorials
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+        event.currentTarget.classList.add("active-link");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
